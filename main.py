@@ -21,7 +21,7 @@ class Sum(Resource):
         return jsonify({'data': a+b})
 
 
-api.add_resource(status, '/')
+api.add_resource(status, 'https://abasit.herokuapp.com/')
 api.add_resource(Sum, '/add/<int:a>,<int:b>')
 
 if __name__ == '__main__':
